@@ -3,11 +3,21 @@
 /* ---------------------------
          About Us Section
 --------------------------------*/
-
 #about {
     background: #fff;
     padding: 60px 0;
   }
+
+
+  #about .container h3{
+    font-weight: 1000;
+    font-size: 36px;
+  }
+  #about .container p{
+    font-weight: 100;
+    font-size: 24px;
+  }
+
   #about .about-container .background {
     margin: 20px 0;
   }
@@ -19,12 +29,12 @@
   
   #about .about-container .title {
     color: #333;
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: 1000;
+    font-size: 64px;
   }
   
   #about .about-container p {
-    line-height: 26px;
+    line-height: 36px;
   }
   
   #about .about-container p:last-child {
@@ -36,7 +46,12 @@
   }
   
   #about .about-extra h4 {
-    font-weight: 600;
+    font-weight: 1000;
+    font-size: 36px;
+  }
+  #about .about-extra p {
+    font-weight: 100;
     font-size: 24px;
   }
+
   
