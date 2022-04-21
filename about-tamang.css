@@ -3,14 +3,37 @@
 /* ---------------------------
          About Us Section
 --------------------------------*/
+.yatra-main-menu{
+  position: fixed !important;
+}
+#scrollUp {
+  padding-top: 10px!important;
+}
+
+#more, #more2, #more3, #more4, #more5, #more6{display: none;}
+
+#myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6 {
+  border: solid 2px #149df9 !important;
+  border-radius: 20px;
+  background-color: #149df9;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 #about {
     background: #fff;
     padding: 60px 0;
   }
 
-
   #about .container h3{
-    font-weight: 1000;
+    font-weight: 900;
     font-size: 36px;
   }
   #about .container p{
