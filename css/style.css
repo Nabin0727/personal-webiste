@@ -269,8 +269,8 @@ ul.social-network li a {
     color: #26a2f5;
     font-weight: 600;
     text-align: center; 
-    margin: 10px;
-    margin-right: 100px; }
+    margin: 20px;
+    margin-right: 80px; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .yatra-main-menu .classynav ul li a {
         padding: 0 8px; } }
@@ -296,6 +296,74 @@ ul.social-network li a {
     color: #ffffff; }
 
 
+/*  package Area */
+.popular-package-area {
+  position: relative;
+  z-index: 1;
+  background-repeat: repeat; }
+
+.single-popular-package {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background-color: #ffffff; }
+  .single-popular-package img {
+    display: block;
+    width: 100%;
+    border-radius: 6px 6px 0 0; }
+  .single-popular-package .package-content {
+    padding: 25px; }
+    .single-popular-package .package-content h4 {
+      margin-bottom: 5px; }
+    .single-popular-package .package-content h4:hover{
+      color: #e75272;}
+    .single-popular-package .package-content .meta {
+      margin-bottom: 15px; }
+      .single-popular-package .package-content .meta a {
+        color: rgba(0, 0, 0, 0.4);
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        margin-right: 10px; }
+        .single-popular-package .package-content .meta a:hover {
+          color: #26a2f5; }
+    .single-popular-package .package-content p {
+      margin-bottom: 0; }
+  .single-popular-package .see-rating-fee {
+    width: 100%;
+    height: 40px;
+    background-color: #f7f7f7;
+    border-radius: 0 0 6px 6px; }
+    .single-popular-package .see-rating-fee .see-rating {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.3);
+      font-weight: 600;
+      height: 100%; }
+      .single-popular-package .see-rating-fee .see-rating div {
+        padding: 0 10px;
+        border-right: 1px solid #ebebeb;
+        height: 100%;
+        line-height: 40px; }
+      .single-popular-package .see-rating-fee .see-rating i {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.3);
+        overflow: hidden;}
+    .single-popular-package .see-rating-fee .package-fee a {
+      display: inline-block;
+      width: 70px;
+      height: 40px;
+      border-radius: 0 0 6px 0;
+      background-color: #33bd27;
+      text-align: center;
+      line-height: 40px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+      letter-spacing: 0.75px; }
+      .single-popular-package .see-rating-fee .package-fee a.free {
+        background-color: #33bd27; }
 
 
 /* ===================
