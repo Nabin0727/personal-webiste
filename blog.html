@@ -60,7 +60,7 @@
         <div class="container">
           <header class="section-header wow fadeInUp">
             <h3>Blogs</h3>
-            <p>i write, i become one!! </p>
+            <p>i write one, i become one!! </p>
           </header>
   
  <!-- ##### Popular Package Start Here ##### -->
@@ -249,6 +249,7 @@
     <div class="credits">
       Designed by <a href="https://nabinlopchan.com.np/">NabinLopchan</a>
     </div>
+    <div id="visitCount"></div>
   </div>
 </footer>
 
@@ -258,6 +259,16 @@
         ======================== -->
     <!-- ##### All Javascript Script ##### -->
     <!-- Read More-->
+      <!-- Page Count-->
+  <script>
+    function updateVisitCount() {
+      var count = localStorage.getItem('pageVisits') || 0;
+      count++;
+      localStorage.setItem('pageVisits', count);
+      document.getElementById('visitCount').innerHTML = 'Page visits: ' + count;
+    }
+    window.onload = updateVisitCount;
+  </script>
          
       
     <script src="js/readmore.js"></script>

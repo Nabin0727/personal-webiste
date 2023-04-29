@@ -36,7 +36,6 @@
   <script>
     document.body.home = 'fade';
   </script>
-      
     <!-- ##### Header Area Start ##### -->
     <header class="header-area">
         <nav div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -265,9 +264,21 @@
       <div class="credits">
         Designed by <a href="https://nabinlopchan.com.np/">NabinLopchan</a>
       </div>
+      <div id="visitCount"></div>
     </div>
   </footer>
 	
+  <!-- Page Count-->
+  <script>
+    function updateVisitCount() {
+      var count = localStorage.getItem('pageVisits') || 0;
+      count++;
+      localStorage.setItem('pageVisits', count);
+      document.getElementById('visitCount').innerHTML = 'Page visits: ' + count;
+    }
+    window.onload = updateVisitCount;
+  </script>
+
     <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->

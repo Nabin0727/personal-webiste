@@ -682,3 +682,9 @@ ul.social-network li a {
 #footer .credits a:hover {
   color: #26a2f5;
 }
+footer #visitCount {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 4px;
+  color: #8582a8;
+}

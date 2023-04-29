@@ -70,19 +70,19 @@
             <div class="col-lg-6 content order-lg-1 order-2 wow fadeInUp">
                 <a href="styles/images/picture.jpg" download>
               <img src="styles/images/picture.jpg" class="img-fluid" alt="">
-              <p>Right-click and choose "Save image as" to download.</p>
+              <p>Right-click and choose "Save image as" to download. Save image name as picture.jpg</p>
             </a>
             </div>
             <div class="col-lg-6 content order-lg-1 order-2 wow fadeInUp">
                 <h4>Instructions</h4>
                 <ol start="1">
-                    <li>1. Save this image as per the description given below the image. You can save with any name, at any location you 
+                    <li>1. Save this image as per the description given below the image. You can save at any location you 
                         want in you local computer.
                     </li><br>
                     <li>2. To participate in this contest, mail to <b>lopchannabin138@gmail.com</b>. (Just
                      write your basic deatils eg: Ram Krishna Adhikari, 98**********, Kathmandu)</li><br>
                     <li>3. The picture you have download contains three prime number associated with it.</li><br>
-                    <li>4. Find the <b>three prime number</b>and multiply it with each other.</li><br>
+                    <li>4. Find the <b>three prime number</b> and multiply it with each other.</li><br>
                     <li>5. The answer you got after the multiplication will be the final answer.</li><br>
                     <li>6. Only first <b>3 people</b> will be awarded with the prize.</li><br>
                     <li><b><strong>BEST OF LUCK</strong></b></li>
@@ -194,6 +194,7 @@
       <div class="credits">
         Designed by <a href="https://nabinlopchan.com.np/">NabinLopchan</a>
       </div>
+      <div id="visitCount"></div>
     </div>
   </footer>
   
@@ -201,6 +202,16 @@
         <!-- ===================
              About Section End
           ======================== -->
+            <!-- Page Count-->
+  <script>
+    function updateVisitCount() {
+      var count = localStorage.getItem('pageVisits') || 0;
+      count++;
+      localStorage.setItem('pageVisits', count);
+      document.getElementById('visitCount').innerHTML = 'Page visits: ' + count;
+    }
+    window.onload = updateVisitCount;
+  </script>
 
       <script src="js/readmore.js"></script>
       <!-- jQuery-2.2.4 js -->

@@ -319,6 +319,7 @@
     <div class="credits">
       Designed by <a href="https://nabinlopchan.com.np/">NabinLopchan</a>
     </div>
+    <div id="visitCount"></div>
   </div>
 </footer>
 
@@ -328,6 +329,16 @@
         ======================== -->
     <!-- ##### All Javascript Script ##### -->
     <!-- Read More-->
+      <!-- Page Count-->
+  <script>
+    function updateVisitCount() {
+      var count = localStorage.getItem('pageVisits') || 0;
+      count++;
+      localStorage.setItem('pageVisits', count);
+      document.getElementById('visitCount').innerHTML = 'Page visits: ' + count;
+    }
+    window.onload = updateVisitCount;
+  </script>
     <script>
       function myFunction1() {
         var dots = document.getElementById("dots");
